@@ -1,0 +1,728 @@
+*NETWORK
+IP address HW type Flags HW address Mask Device
+192.168.18.1 0x1 0x2 28:de:e5:3d:fd:51 * wlan0
+MemTotal: 3820480 kB
+MemFree: 62588 kB
+MemAvailable: 1315536 kB
+Buffers: 66620 kB
+Cached: 1418920 kB
+SwapCached: 44820 kB
+Active: 1563760 kB
+Inactive: 1060256 kB
+Active(anon): 690604 kB
+Inactive(anon): 623512 kB
+Active(file): 873156 kB
+Inactive(file): 436744 kB
+Unevictable: 150064 kB
+Mlocked: 150064 kB
+SwapTotal: 2097148 kB
+SwapFree: 1421568 kB
+Dirty: 588 kB
+Writeback: 0 kB
+AnonPages: 1280344 kB
+Mapped: 716292 kB
+Shmem: 26224 kB
+Slab: 246532 kB
+SReclaimable: 84048 kB
+SUnreclaim: 162484 kB
+KernelStack: 55952 kB
+PageTables: 103576 kB
+NFS_Unstable: 0 kB
+Bounce: 0 kB
+WritebackTmp: 0 kB
+CommitLimit: 4007388 kB
+Committed_AS: 117477888 kB
+VmallocTotal: 263061440 kB
+VmallocUsed: 0 kB
+VmallocChunk: 0 kB
+CmaTotal: 0 kB
+CmaFree: 0 kB
+IonTotalCache: 37024 kB
+IonTotalUsed: 77216 kB
+Technology	GSM / HSPA / LTE
+2G bands	GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2
+3G bands	HSDPA 850 / 900 / 2100
+4G bands	1, 3, 5, 8, 38, 40, 41
+Speed	HSPA 42.2/5.76 Mbps, LTE-A
+LAUNCH
+Announced	2020, April 20
+Status	Available. Released 2020, April 20
+BODY
+Dimensions	155.9 x 75.5 x 8.3 mm (6.14 x 2.97 x 0.33 in)
+Weight	165 g (5.82 oz)
+Build	Glass front, plastic back, plastic frame
+SIM	Dual SIM (Nano-SIM, dual stand-by)
+DISPLAY
+Type	IPS LCD, 450 nits (typ)
+Size	6.22 inches, 96.6 cm2 (~82.0% screen-to-body ratio)
+Resolution	720 x 1520 pixels, 19:9 ratio (~270 ppi density)
+Protection	Corning Gorilla Glass 3
+PLATFORM
+OS	Android 9.0 (Pie), ColorOS 6.1
+Chipset	Mediatek MT6765 Helio P35 (12nm)
+CPU	Octa-core (4x2.35 GHz Cortex-A53 & 4x1.8 GHz Cortex-A53)
+*.gpu GPU	PowerVR GE8320
+MEMORY
+Card slot	microSDXC
+Internal	32GB 3GB RAM, 64GB 4GB RAM
+ 	eMMC 5.1
+MAIN CAMERA
+Dual	13 MP, f/2.2, (wide), 1/3.1", 1.12µm, PDAF
+2 MP, f/2.4, (depth)
+Features	LED flash, HDR, panorama
+Video	1080p@30fps
+SELFIE CAMERA
+Single	5 MP, f/2.0, 1/5", 1.12µm
+Features	HDR
+Video	
+SOUND
+Loudspeaker	Yes
+3.5mm jack	Yes
+COMMS
+WLAN	Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, hotspot
+Bluetooth	5.0, A2DP, LE
+GPS	Yes, with A-GPS, GLONASS, BDS
+NFC	No
+Radio	FM radio
+USB	microUSB 2.0, USB On-The-Go
+FEATURES
+Sensors	Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass
+Messaging	SMS(threaded view), MMS, Email, Push Email, IM
+Browser	HTML5
+BATTERY
+Type	Li-Po 4230 mAh, non-removable
+MISC
+Colors	Blue, Black
+Models	CPH2083, CPH2077
+Price	$ 559.00 / € 169.00 / ₹ 11,285 / Rp 1,550,000.i
+6.22"
+720x1520 pixels 13MP 1080p 3/4GB RAM
+Helio P35 4230mAh Li-P0 2.4%
+1,847,131 hits
+*$ cuobjdump a.out -sass -ptx
+Fatbin elf code:
+================
+arch = sm_70
+code version = [1,7]
+producer = cuda
+host = linux
+compile_size = 64bit
+identifier = add.cu
+
+code for sm_70
+        Function : _Z3addPiS_S_
+.headerflags    @"EF_CUDA_SM70 EF_CUDA_PTX_SM(EF_CUDA_SM70)"
+/*0000*/      IMAD.MOV.U32 R1, RZ, RZ, c[0x0][0x28] ;  /* 0x00000a00ff017624 */
+                                                       /* 0x000fd000078e00ff */
+/*0010*/ @!PT SHFL.IDX PT, RZ, RZ, RZ, RZ ;            /* 0x000000fffffff389 */
+                                                       /* 0x000fe200000e00ff */
+/*0020*/      IMAD.MOV.U32 R2, RZ, RZ, c[0x0][0x160] ; /* 0x00005800ff027624 */
+                                                       /* 0x000fe200078e00ff */
+/*0030*/      MOV R3, c[0x0][0x164] ;                  /* 0x0000590000037a02 */
+                                                       /* 0x000fe20000000f00 */
+/*0040*/      IMAD.MOV.U32 R4, RZ, RZ, c[0x0][0x168] ; /* 0x00005a00ff047624 */
+                                                       /* 0x000fe200078e00ff */
+/*0050*/      MOV R5, c[0x0][0x16c] ;                  /* 0x00005b0000057a02 */
+                                                       /* 0x000fcc0000000f00 */
+/*0060*/      LDG.E.SYS R2, [R2] ;                     /* 0x0000000002027381 */
+                                                       /* 0x000ea800001ee900 */
+/*0070*/      LDG.E.SYS R5, [R4] ;                     /* 0x0000000004057381 */
+                                                       /* 0x000ea200001ee900 */
+/*0080*/      IMAD.MOV.U32 R6, RZ, RZ, c[0x0][0x170] ; /* 0x00005c00ff067624 */
+                                                       /* 0x000fe200078e00ff */
+/*0090*/      MOV R7, c[0x0][0x174] ;                  /* 0x00005d0000077a02 */
+                                                       /* 0x000fe40000000f00 */
+/*00a0*/      IADD3 R9, R2, R5, RZ ;                   /* 0x0000000502097210 */
+                                                       /* 0x004fd00007ffe0ff */
+/*00b0*/      STG.E.SYS [R6], R9 ;                     /* 0x0000000906007386 */
+                                                       /* 0x000fe2000010e900 */
+/*00c0*/      EXIT ;                                   /* 0x000000000000794d */
+                                                       /* 0x000fea0003800000 */
+/*00d0*/      BRA 0xd0;                                /* 0xfffffff000007947 */
+                                                       /* 0x000fc0000383ffff */
+/*00e0*/      NOP;                                     /* 0x0000000000007918 */
+                                                       /* 0x000fc00000000000 */
+/*00f0*/      NOP;                                     /* 0x0000000000007918 */
+                                                       /* 0x000fc00000000000 */
+        ........................ii
+*.Fatbin ptx code:
+================
+arch = sm_70
+code version = [7,0]
+producer = cuda
+host = linux
+compile_size = 64bit
+compressed
+identifier = add.cu
+
+.version 7.0
+.target sm_70
+.address_size 64
+
+.visible .entry _Z3addPiS_S_(
+.param .u64 _Z3addPiS_S__param_0,
+.param .u64 _Z3addPiS_S__param_1,
+.param .u64 _Z3addPiS_S__param_2
+)
+{
+.reg .s32 %r<4>;
+.reg .s64 %rd<7>;
+
+ld.param.u64 %rd1, [_Z3addPiS_S__param_0];
+ld.param.u64 %rd2, [_Z3addPiS_S__param_1];
+ld.param.u64 %rd3, [_Z3addPiS_S__param_2];
+cvta.to.global.u64 %rd4, %rd3;
+cvta.to.global.u64 %rd5, %rd2;
+cvta.to.global.u64 %rd6, %rd1;
+ld.global.u32 %r1, [%rd6];
+ld.global.u32 %r2, [%rd5];
+add.s32 %r3, %r2, %r1;
+st.global.u32 [%rd4], %r3;
+ret;
+CUDA Binary Utilities :: CUDA Toolkit Documentation
+1.1. What is a CUDA Binary?
+A CUDA binary (also referred to as cubin) file is an ELF-formatted file which consists of CUDA executable code sections as well as other sections containing symbols, relocators, debug info, etc. By default, the CUDA compiler driver nvcc embeds cubin files into the host executable file. But they can also be generated separately by using the "-cubin" option of nvcc. cubin files are loaded at run time by the CUDA driver API.
+
+Note: For more details on cubin files or the CUDA compilation trajectory, refer to NVIDIA CUDA Compiler Driver NVCC.
+1.2. Differences between cuobjdump and nvdisasm
+CUDA provides two binary utilities for examining and disassembling cubin files and host executables: cuobjdump and nvdisasm. Basically, cuobjdump accepts both cubin files and host binaries while nvdisasm only accepts cubin files; but nvdisasm provides richer output options.
+
+Here's a quick comparison of the two tools:
+
+Table 1. Comparison of cuobjdump and nvdisasm
+ 	cuobjdump	nvdisasm
+Disassemble cubin	Yes	Yes
+Extract ptx and extract and disassemble cubin from the following input files:
+Host binaries
+Executables
+Object files
+Static libraries
+External fatbinary files
+Yes	No
+Control flow analysis and output	No	Yes
+Advanced display options	No	Yes
+2.1. Usage
+cuobjdump accepts a single input file each time it's run. The basic usage is as following:
+
+cuobjdump [options] <file>
+To disassemble a standalone cubin or cubins embedded in a host executable and show CUDA assembly of the kernels, use the following command:
+
+cuobjdump -sass <input file>
+To dump cuda elf sections in human readable format from a cubin file, use the following command:
+
+cuobjdump -elf <cubin file>
+To extract ptx text from a host binary, use the following command:
+
+cuobjdump -ptx <host binary>
+Here's a sample output of cuobjdump:
+
+$ cuobjdump a.out -sass -ptx
+Fatbin elf code:
+================
+arch = sm_70
+code version = [1,7]
+producer = cuda
+host = linux
+compile_size = 64bit
+identifier = add.cu
+
+code for sm_70
+        Function : _Z3addPiS_S_
+.headerflags    @"EF_CUDA_SM70 EF_CUDA_PTX_SM(EF_CUDA_SM70)"
+/*0000*/      IMAD.MOV.U32 R1, RZ, RZ, c[0x0][0x28] ;  /* 0x00000a00ff017624 */
+                                                       /* 0x000fd000078e00ff */
+/*0010*/ @!PT SHFL.IDX PT, RZ, RZ, RZ, RZ ;            /* 0x000000fffffff389 */
+                                                       /* 0x000fe200000e00ff */
+/*0020*/      IMAD.MOV.U32 R2, RZ, RZ, c[0x0][0x160] ; /* 0x00005800ff027624 */
+                                                       /* 0x000fe200078e00ff */
+/*0030*/      MOV R3, c[0x0][0x164] ;                  /* 0x0000590000037a02 */
+                                                       /* 0x000fe20000000f00 */
+/*0040*/      IMAD.MOV.U32 R4, RZ, RZ, c[0x0][0x168] ; /* 0x00005a00ff047624 */
+                                                       /* 0x000fe200078e00ff */
+/*0050*/      MOV R5, c[0x0][0x16c] ;                  /* 0x00005b0000057a02 */
+                                                       /* 0x000fcc0000000f00 */
+/*0060*/      LDG.E.SYS R2, [R2] ;                     /* 0x0000000002027381 */
+                                                       /* 0x000ea800001ee900 */
+/*0070*/      LDG.E.SYS R5, [R4] ;                     /* 0x0000000004057381 */
+                                                       /* 0x000ea200001ee900 */
+/*0080*/      IMAD.MOV.U32 R6, RZ, RZ, c[0x0][0x170] ; /* 0x00005c00ff067624 */
+                                                       /* 0x000fe200078e00ff */
+/*0090*/      MOV R7, c[0x0][0x174] ;                  /* 0x00005d0000077a02 */
+                                                       /* 0x000fe40000000f00 */
+/*00a0*/      IADD3 R9, R2, R5, RZ ;                   /* 0x0000000502097210 */
+                                                       /* 0x004fd00007ffe0ff */
+/*00b0*/      STG.E.SYS [R6], R9 ;                     /* 0x0000000906007386 */
+                                                       /* 0x000fe2000010e900 */
+/*00c0*/      EXIT ;                                   /* 0x000000000000794d */
+                                                       /* 0x000fea0003800000 */
+/*00d0*/      BRA 0xd0;                                /* 0xfffffff000007947 */
+                                                       /* 0x000fc0000383ffff */
+/*00e0*/      NOP;                                     /* 0x0000000000007918 */
+                                                       /* 0x000fc00000000000 */
+/*00f0*/      NOP;                                     /* 0x0000000000007918 */
+                                                       /* 0x000fc00000000000 */
+        .......................
+        
+Fatbin ptx code:
+================
+arch = sm_70
+code version = [7,0]
+producer = cuda
+host = linux
+compile_size = 64bit
+compressed
+identifier = add.cu
+
+.version 7.0
+.target sm_70
+.address_size 64
+
+.visible .entry _Z3addPiS_S_(
+.param .u64 _Z3addPiS_S__param_0,
+.param .u64 _Z3addPiS_S__param_1,
+.param .u64 _Z3addPiS_S__param_2
+)
+{
+.reg .s32 %r<4>;
+.reg .s64 %rd<7>;
+
+ld.param.u64 %rd1, [_Z3addPiS_S__param_0];
+ld.param.u64 %rd2, [_Z3addPiS_S__param_1];
+ld.param.u64 %rd3, [_Z3addPiS_S__param_2];
+cvta.to.global.u64 %rd4, %rd3;
+cvta.to.global.u64 %rd5, %rd2;
+cvta.to.global.u64 %rd6, %rd1;
+ld.global.u32 %r1, [%rd6];
+ld.global.u32 %r2, [%rd5];
+add.s32 %r3, %r2, %r1;
+st.global.u32 [%rd4], %r3;
+ret;
+}
+        
+As shown in the output, the a.out host binary contains cubin and ptx code for sm_70.
+
+To list cubin files in the host binary use -lelf option:
+
+$ cuobjdump a.out -lelf
+ELF file    1: add_new.sm_70.cubin
+ELF file    2: add_new.sm_75.cubin
+ELF file    3: add_old.sm_70.cubin
+ELF file    4: add_old.sm_75.cubin
+        
+To extract all the cubins as files from the host binary use -xelf all option:
+
+$ cuobjdump a.out -xelf all
+Extracting ELF file    1: add_new.sm_70.cubin
+Extracting ELF file    2: add_new.sm_75.cubin
+Extracting ELF file    3: add_old.sm_70.cubin
+Extracting ELF file    4: add_old.sm_75.cubin
+        
+To extract the cubin named add_new.sm_70.cubin:
+
+$ cuobjdump a.out -xelf add_new.sm_70.cubin
+Extracting ELF file    1: add_new.sm_70.cubin
+        
+To extract only the cubins containing _old in their names:
+
+$ cuobjdump a.out -xelf _old
+Extracting ELF file    1: add_old.sm_70.cubin
+Extracting ELF file    2: add_old.sm_75.cubin
+        
+You can pass any substring to -xelf and -xptx options. Only the files having the substring in the name will be extracted from the input binary.
+
+To dump common and per function resource usage information:
+
+$ cuobjdump test.cubin -res-usage
+
+Resource usage:
+ Common:
+  GLOBAL:56 CONSTANT[3]:28
+ Function calculate:
+  REG:24 STACK:8 SHARED:0 LOCAL:0 CONSTANT[0]:472 CONSTANT[2]:24 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function mysurf_func:
+  REG:38 STACK:8 SHARED:4 LOCAL:0 CONSTANT[0]:532 TEXTURE:8 SURFACE:7 SAMPLER:0
+ Function mytexsampler_func:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:472 TEXTURE:4 SURFACE:0 SAMPLER:1
+        
+Note that value for REG, TEXTURE, SURFACE and SAMPLER denotes the count and for other resources it denotes no. of byte(s) used.
+
+3.1. Usage
+nvdisasm accepts a single input file each time it's run. The basic usage is as following:
+
+nvdisasm [options] <input cubin file>
+Here's a sample output of nvdisasm:
+
+    .headerflags    @"EF_CUDA_TEXMODE_UNIFIED EF_CUDA_64BIT_ADDRESS EF_CUDA_SM70
+                      EF_CUDA_VIRTUAL_SM(EF_CUDA_SM70)"
+    .elftype        @"ET_EXEC"
+
+//--------------------- .nv.info                  --------------------------
+    .section        .nv.info,"",@"SHT_CUDA_INFO"
+    .align  4
+
+......
+
+//--------------------- .text._Z9acos_main10acosParams --------------------------
+    .section    .text._Z9acos_main10acosParams,"ax",@progbits
+    .sectioninfo    @"SHI_REGISTERS=14"
+    .align    128
+        .global     _Z9acos_main10acosParams
+        .type       _Z9acos_main10acosParams,@function
+        .size       _Z9acos_main10acosParams,(.L_21 - _Z9acos_main10acosParams)
+        .other      _Z9acos_main10acosParams,@"STO_CUDA_ENTRY STV_DEFAULT"
+_Z9acos_main10acosParams:
+.text._Z9acos_main10acosParams:
+        /*0000*/               MOV R1, c[0x0][0x28] ;
+        /*0010*/               NOP;
+        /*0020*/               S2R R0, SR_CTAID.X ;
+        /*0030*/               S2R R3, SR_TID.X ;
+        /*0040*/               IMAD R0, R0, c[0x0][0x0], R3 ;
+        /*0050*/               ISETP.GE.AND P0, PT, R0, c[0x0][0x170], PT ;
+        /*0060*/           @P0 EXIT ;
+.L_1:
+        /*0070*/               MOV R11, 0x4 ;
+        /*0080*/               IMAD.WIDE R2, R0, R11, c[0x0][0x160] ;
+        /*0090*/               LDG.E.SYS R2, [R2] ;
+        /*00a0*/               MOV R7, 0x3d53f941 ;
+        /*00b0*/               FADD.FTZ R4, |R2|.reuse, -RZ ;
+        /*00c0*/               FSETP.GT.FTZ.AND P0, PT, |R2|.reuse, 0.5699, PT ;
+        /*00d0*/               FSETP.GEU.FTZ.AND P1, PT, R2, RZ, PT ;
+        /*00e0*/               FADD.FTZ R5, -R4, 1 ;
+        /*00f0*/               IMAD.WIDE R2, R0, R11, c[0x0][0x168] ;
+        /*0100*/               FMUL.FTZ R5, R5, 0.5 ;
+        /*0110*/           @P0 MUFU.SQRT R4, R5 ;
+        /*0120*/               MOV R5, c[0x0][0x0] ;
+        /*0130*/               IMAD R0, R5, c[0x0][0xc], R0 ;
+        /*0140*/               FMUL.FTZ R6, R4, R4 ;
+        /*0150*/               FFMA.FTZ R7, R6, R7, 0.018166976049542427063 ;
+        /*0160*/               FFMA.FTZ R7, R6, R7, 0.046756859868764877319 ;
+        /*0170*/               FFMA.FTZ R7, R6, R7, 0.074846573173999786377 ;
+        /*0180*/               FFMA.FTZ R7, R6, R7, 0.16667014360427856445 ;
+        /*0190*/               FMUL.FTZ R7, R6, R7 ;
+        /*01a0*/               FFMA.FTZ R7, R4, R7, R4 ;
+        /*01b0*/               FADD.FTZ R9, R7, R7 ;
+        /*01c0*/          @!P0 FADD.FTZ R9, -R7, 1.5707963705062866211 ;
+        /*01d0*/               ISETP.GE.AND P0, PT, R0, c[0x0][0x170], PT ;
+        /*01e0*/          @!P1 FADD.FTZ R9, -R9, 3.1415927410125732422 ;
+        /*01f0*/               STG.E.SYS [R2], R9 ;
+        /*0200*/          @!P0 BRA `(.L_1) ;
+        /*0210*/               EXIT ;
+.L_2:
+        /*0220*/               BRA `(.L_2);
+.L_21:
+        
+To get the control flow graph of a kernel, use the following:
+
+nvdisasm -cfg <input cubin file>
+nvdisasm is capable of generating control flow of CUDA assembly in the format of DOT graph description language. The output of the control flow from nvdisasm can be directly imported to a DOT graph visualization tool such as Graphviz.
+
+Here's how you can generate a PNG image (cfg.png) of the control flow of the above cubin (a.cubin) with nvdisasm and Graphviz:
+
+nvdisasm -cfg a.cubin | dot -ocfg.png -Tpng
+Here's the generated graph:
+
+Figure 1. Control Flow Graph
+
+Control Flow Graph
+To generate a PNG image (bbcfg.png) of the basic block control flow of the above cubin (a.cubin) with nvdisasm and Graphviz:
+
+nvdisasm -bbcfg a.cubin | dot -obbcfg.png -Tpng
+Here's the generated graph:
+
+Figure 2. Basic Block Control Flow Graph
+
+Basic Block Control Flow Graph
+nvdisasm is capable of showing the register (general and predicate) liveness range information. For each line of CUDA assembly, nvdisasm displays whether a given device register was assigned, accessed, live or re-assigned. It also shows the total number of registers used. This is useful if the user is interested in the life range of any particular register, or register usage in general.
+
+Here's a sample output (output is pruned for brevity):
+
+                                                      // +-----------------+------+
+                                                      // |      GPR        | PRED |
+                                                      // |                 |      |
+                                                      // |                 |      |
+                                                      // |    000000000011 |      |
+                                                      // |  # 012345678901 | # 01 |
+                                                      // +-----------------+------+
+    .global acos                                      // |                 |      |
+    .type   acos,@function                            // |                 |      |
+    .size   acos,(.L_21 - acos)                       // |                 |      |
+    .other  acos,@"STO_CUDA_ENTRY STV_DEFAULT"        // |                 |      |
+acos:                                                 // |                 |      |
+.text.acos:                                           // |                 |      |
+    MOV R1, c[0x0][0x28] ;                            // |  1  ^           |      |
+    NOP;                                              // |  1  ^           |      |
+    S2R R0, SR_CTAID.X ;                              // |  2 ^:           |      |
+    S2R R3, SR_TID.X ;                                // |  3 :: ^         |      |
+    IMAD R0, R0, c[0x0][0x0], R3 ;                    // |  3 x: v         |      |
+    ISETP.GE.AND P0, PT, R0, c[0x0][0x170], PT ;      // |  2 v:           | 1 ^  |
+@P0 EXIT ;                                            // |  2 ::           | 1 v  |
+.L_1:                                                 // |  2 ::           |      |
+     MOV R11, 0x4 ;                                   // |  3 ::         ^ |      |
+     IMAD.WIDE R2, R0, R11, c[0x0][0x160] ;           // |  5 v:^^       v |      |
+     LDG.E.SYS R2, [R2] ;                             // |  4 ::^        : |      |
+     MOV R7, 0x3d53f941 ;                             // |  5 :::    ^   : |      |
+     FADD.FTZ R4, |R2|.reuse, -RZ ;                   // |  6 ::v ^  :   : |      |
+     FSETP.GT.FTZ.AND P0, PT, |R2|.reuse, 0.5699, PT; // |  6 ::v :  :   : | 1 ^  |
+     FSETP.GEU.FTZ.AND P1, PT, R2, RZ, PT ;           // |  6 ::v :  :   : | 2 :^ |
+     FADD.FTZ R5, -R4, 1 ;                            // |  6 ::  v^ :   : | 2 :: |
+     IMAD.WIDE R2, R0, R11, c[0x0][0x168] ;           // |  8 v:^^:: :   v | 2 :: |
+     FMUL.FTZ R5, R5, 0.5 ;                           // |  5 ::  :x :     | 2 :: |
+ @P0 MUFU.SQRT R4, R5 ;                               // |  5 ::  ^v :     | 2 v: |
+     MOV R5, c[0x0][0x0] ;                            // |  5 ::  :^ :     | 2 :: |
+     IMAD R0, R5, c[0x0][0xc], R0 ;                   // |  5 x:  :v :     | 2 :: |
+     FMUL.FTZ R6, R4, R4 ;                            // |  5 ::  v ^:     | 2 :: |
+     FFMA.FTZ R7, R6, R7, 0.018166976049542427063 ;   // |  5 ::  : vx     | 2 :: |
+     FFMA.FTZ R7, R6, R7, 0.046756859868764877319 ;   // |  5 ::  : vx     | 2 :: |
+     FFMA.FTZ R7, R6, R7, 0.074846573173999786377 ;   // |  5 ::  : vx     | 2 :: |
+     FFMA.FTZ R7, R6, R7, 0.16667014360427856445 ;    // |  5 ::  : vx     | 2 :: |
+     FMUL.FTZ R7, R6, R7 ;                            // |  5 ::  : vx     | 2 :: |
+     FFMA.FTZ R7, R4, R7, R4 ;                        // |  4 ::  v  x     | 2 :: |
+     FADD.FTZ R9, R7, R7 ;                            // |  4 ::     v ^   | 2 :: |
+@!P0 FADD.FTZ R9, -R7, 1.5707963705062866211 ;        // |  4 ::     v ^   | 2 v: |
+     ISETP.GE.AND P0, PT, R0, c[0x0][0x170], PT ;     // |  3 v:       :   | 2 ^: |
+@!P1 FADD.FTZ R9, -R9, 3.1415927410125732422 ;        // |  3 ::       x   | 2 :v |
+     STG.E.SYS [R2], R9 ;                             // |  3 ::       v   | 1 :  |
+@!P0 BRA `(.L_1) ;                                    // |  2 ::           | 1 v  |
+     EXIT ;                                           // |  1  :           |      |
+.L_2:                                                 // +.................+......+
+     BRA `(.L_2);                                     // |                 |      |
+.L_21:                                                // +-----------------+------+
+                                                      // Legend:
+                                                      //     ^       : Register assignment
+                                                      //     v       : Register usage
+                                                      //     x       : Register usage and reassignment
+                                                      //     :       : Register in use
+                                                      //     <space> : Register not in use
+                                                      //     #       : Number of occupied registers
+nvdisasm is capable of showing line number information of the CUDA source file which can be useful for debugging.
+
+To get the line-info of a kernel, use the following:
+
+nvdisasm -g <input cubin file>
+ nvdisasm -g command:
+
+//--------------------- .text._Z6kernali          --------------------------
+        .section        .text._Z6kernali,"ax",@progbits
+        .sectioninfo    @"SHI_REGISTERS=24"
+        .align  128
+        .global         _Z6kernali
+        .type           _Z6kernali,@function
+        .size           _Z6kernali,(.L_4 - _Z6kernali)
+        .other          _Z6kernali,@"STO_CUDA_ENTRY STV_DEFAULT"
+_Z6kernali:
+.text._Z6kernali:
+        /*0000*/                   MOV R1, c[0x0][0x28] ;
+        /*0010*/                   NOP;
+    //## File "/home/user/cuda/", line 25
+        /*0020*/                   MOV R0, 0x160 ;
+        /*0030*/                   LDC R0, c[0x0][R0] ;
+        /*0040*/                   MOV R0, R0 ;
+        /*0050*/                   MOV R2, R0 ;
+    //## File "/home/user/cuda/", line 26
+        /*0060*/                   MOV R4, R2 ;
+        /*0070*/                   MOV R20, 32@lo((_Z6kernali + .L_1@srel)) ;
+        /*0080*/                   MOV R21, 32@hi((_Z6kernali + .L_1@srel)) ;
+        /*0090*/                   CALL.ABS.NOINC `(_Z3fooi) ;
+.L_1:
+        /*00a0*/                   MOV R0, R4 ;
+        /*00b0*/                   MOV R4, R2 ;
+        /*00c0*/                   MOV R2, R0 ;
+        /*00d0*/                   MOV R20, 32@lo((_Z6kernali + .L_2@srel)) ;
+        /*00e0*/                   MOV R21, 32@hi((_Z6kernali + .L_2@srel)) ;
+        /*00f0*/                   CALL.ABS.NOINC `(_Z3bari) ;
+.L_2:
+        /*0100*/                   MOV R4, R4 ;
+        /*0110*/                   IADD3 R4, R2, R4, RZ ;
+        /*0120*/                   MOV R2, 32@lo(arr) ;
+        /*0130*/                   MOV R3, 32@hi(arr) ;
+        /*0140*/                   MOV R2, R2 ;
+        /*0150*/                   MOV R3, R3 ;
+        /*0160*/                   ST.E.SYS [R2], R4 ;
+    //## File "/home/user/cuda/system.cu", line 27
+        /*0170*/                   ERRBAR ;
+        /*0180*/                   EXIT ;
+.L_3:
+        /*0190*/                   BRA `(.L_3);
+.L_4:
+        nvdisasm is capable of showing line number           --------------------------
+    .section    .text._Z6kernali,"ax",@progbits
+    .sectioninfo    @"SHI_REGISTERS=16"
+    .align    128
+        .global         _Z6kernali
+        .type           _Z6kernali,@function
+        .size           _Z6kernali,(.L_18 - _Z6kernali)
+        .other          _Z6kernali,@"STO_CUDA_ENTRY STV_DEFAULT"
+_Z6kernali:
+.text._Z6kernali:
+        /*0000*/                   IMAD.MOV.U32 R1, RZ, RZ, c[0x0][0x28] ;
+    //## File "/home/user/cuda/inline.cu", line 17 inlined at "/home/user/cuda/inline.cu", line 23
+    //## File "/home/user/cuda/inline.cu", line 23
+        /*0010*/                   UMOV UR4, 32@lo(arr) ;
+        /*0020*/                   UMOV UR5, 32@hi(arr) ;
+        /*0030*/                   IMAD.U32 R2, RZ, RZ, UR4 ;
+        /*0040*/                   MOV R3, UR5 ;
+        /*0050*/                   ULDC.64 UR4, c[0x0][0x118] ;
+    //## File "/home/user/cuda/inline.cu", line 10 inlined at "/home/user/cuda/inline.cu", line 17
+    //## File "/home/user/cuda/inline.cu", line 17 inlined at "/home/user/cuda/inline.cu", line 23
+    //## File "/home/user/cuda/inline.cu", line 23
+        /*0060*/                   LDG.E R4, [R2.64] ;
+        /*0070*/                   LDG.E R5, [R2.64+0x4] ;
+    //## File "/home/user/cuda/inline.cu", line 17 inlined at "/home/user/cuda/inline.cu", line 23
+    //## File "/home/user/cuda/inline.cu", line 23
+        /*0080*/                   LDG.E R0, [R2.64+0x8] ;
+    //## File "/home/user/cuda/inline.cu", line 23
+        /*0090*/                   UMOV UR6, 32@lo(ans) ;
+        /*00a0*/                   UMOV UR7, 32@hi(ans) ;
+    //## File "/home/user/cuda/inline.cu", line 10 inlined at "/home/user/cuda/inline.cu", line 17
+    //## File "/home/user/cuda/inline.cu", line 17 inlined at "/home/user/cuda/inline.cu", line 23
+    //## File "/home/user/cuda/inline.cu", line 23
+        /*00b0*/                   IADD3 R7, R4, c[0x0][0x160], RZ ;
+    //## File "/home/user/cuda/inline.cu", line 23
+        /*00c0*/                   IMAD.U32 R4, RZ, RZ, UR6 ;
+    //## File "/home/user/cuda/inline.cu", line 10 inlined at "/home/user/cuda/inline.cu", line 17
+    //## File "/home/user/cuda/inline.cu", line 17 inlined at "/home/user/cuda/inline.cu", line 23
+    //## File "/home/user/cuda/inline.cu", line 23
+        /*00d0*/                   IADD3 R9, R5, c[0x0][0x160], RZ ;
+    //## File "/home/user/cuda/inline.cu", line 23
+        /*00e0*/                   MOV R5, UR7 ;
+    //## File "/home/user/cuda/inline.cu", line 10 inlined at "/home/user/cuda/inline.cu", line 17
+    //## File "/home/user/cuda/inline.cu", line 17 inlined at "/home/user/cuda/inline.cu", line 23
+    //## File "/home/user/cuda/inline.cu", line 23
+        /*00f0*/                   IADD3 R11, R0.reuse, c[0x0][0x160], RZ ;
+    //## File "/home/user/cuda/inline.cu", line 17 inlined at "/home/user/cuda/inline.cu", line 23
+    //## File "/home/user/cuda/inline.cu", line 23
+        /*0100*/                   IMAD.IADD R13, R0, 0x1, R7 ;
+    //## File "/home/user/cuda/inline.cu", line 10 inlined at "/home/user/cuda/inline.cu", line 17
+    //## File "/home/user/cuda/inline.cu", line 17 inlined at "/home/user/cuda/inline.cu", line 23
+    //## File "/home/user/cuda/inline.cu", line 23
+        /*0110*/                   STG.E [R2.64+0x4], R9 ;
+        /*0120*/                   STG.E [R2.64], R7 ;
+        /*0130*/                   STG.E [R2.64+0x8], R11 ;
+    //## File "/home/user/cuda/inline.cu", line 23
+        /*0140*/                   STG.E [R4.64], R13 ;
+    //## File "/home/user/cuda/inline.cu", line 24
+        /*0150*/                   EXIT ;
+.L_3:
+        /*0160*/                   BRA `(.L_3);
+.L_18:
+        
+5.1. Usage
+cu++filt accepts one or more alphanumeric words (consisting of letters, digits, underscores, dollars, or periods) and attepts to decipher them. The basic usage is as following:
+
+cu++filt [options] <symbol(s)>
+To demangle an entire file, like a binary, pipe the contents of the file to cu++filt, such as in the following command:
+
+nm <input file> | cu++filt
+To demangle function names without printing their parameter types, use the following command :
+
+cu++filt -p <symbol(s)>
+To skip a leading underscore from mangled symbols, use the following command:
+
+cu++filt -_ <symbol(s)>
+Here's a sample output of cu++filt:
+
+$ cu++filt _Z1fIiEbl
+bool f<int>(long)
+        
+As shown in the output, the symbol _Z1fIiEbl was successfully demangled.
+
+To strip all types in the function signature and parameters, use the -p option:
+
+$ cu++filt -p _Z1fIiEbl
+f<int>
+        
+To skip a leading underscore from a mangled symbol, use the -_ option:
+
+$ cu++filt -_ __Z1fIiEbl
+bool f<int>(long)
+        
+To demangle an entire file, pipe the contents of the file to cu++filt:
+
+$ nm test.sm_70.cubin | cu++filt
+0000000000000000 t hello(char *)
+0000000000000070 t hello(char *)::display()
+0000000000000000 T hello(int *)
+        
+Symbols that cannot be demangled are printed back to stdout as is:
+
+$ cu++filt _ZD2
+_ZD2
+        
+Multiple symbols can be demangled from the command line:
+
+$ cu++filt _ZN6Scope15Func1Enez _Z3fooIiPFYneEiEvv _ZD2
+Scope1::Func1(__int128, long double, ...)
+void foo<int, __int128 (*)(long double), int>()
+_ZD2
+        
+5.3. Library Availability
+cu++filt is also available as a static library (libcufilt) that can be linked against an existing project. The following interface describes it's usage:
+
+char* __cu_demangle(const char *id, char *output_buffer, size_t *length, int *status)
+This interface can be found in the file "nv_decode.h" located in the SDK.
+
+Input Parameters
+
+id Input mangled string.
+
+output_buffer Pointer to where the demangled buffer will be stored. This memory must be allocated with malloc. If output-buffer is NULL, memory will be malloc'd to store the demangled name and returned through the function return value. If the output-buffer is too small, it is expanded using realloc.
+
+length It is necessary to provide the size of the output buffer if the user is providing pre-allocated memory. This is needed by the demangler in case the size needs to be reallocated. If the length is non-null, the length of the demangled buffer is placed in length.
+
+status *status is set to one of the following values:
+• 0 - The demangling operation succeeded
+
+           • -1 - A memory allocation failure occurred
+
+           • -2 - Not a valid mangled id
+
+           • -3 - An input validation failure has occurred (one or more arguments are invalid)
+
+Return Value
+
+A pointer to the start of the NUL-terminated demangled name, or NULL if the demangling fails. The caller is responsible for deallocating this memory using free.
+
+Note: This function is thread-safe.
+
+Example Usage
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "nv_decode.h"
+
+int main()
+{
+  int     status;
+  const char *real_mangled_name="_ZN8clstmp01I5cls01E13clstmp01_mf01Ev";
+  const char *fake_mangled_name="B@d_iDentiFier";
+
+  char* realname = __cu_demangle(fake_mangled_name, 0, 0, &status);
+  printf("fake_mangled_name:\t result => %s\t status => %d\n", realname, status);
+  free(realname);
+
+  size_t size = sizeof(char)*1000;
+  realname = (char*)malloc(size);
+  __cu_demangle(real_mangled_name, realname, &size, &status);
+  printf("real_mangled_name:\t result => %s\t status => %d\n", realname, status);
+  free(realname);
+
+  return 0;
+}
+   
+This prints:
+
+   fake_mangled_name:   result => (null)     status => -2
+   real_mangled_name:   result => clstmp01<cls01>::clstmp01_mf01()   status => 0
+   
+6.1. Usage
+nvprune accepts a single input file each time it's run, emitting a new output file. The basic usage is as following:
+
+nvprune [options] -o <outfile> <infile>
+The input file must be either a relocatable host object or static library (not a host executable), and the output file will be the same format.
+
+Either the --arch or --generate-code option must be used to specify the target(s) to keep. All other device code is discarded from the file. The targets can be either a sm_NN arch (cubin) or compute_NN arch (ptx).
+
+For example, the following will prune libcublas_static.a to only contain sm_70 cubin rather than all the targets which normally exist:
+
+nvprune -arch sm_70 libcublas_static.a -o libcublas_static70.a
+Note that this means that libcublas_static70.a will not run on any other architecture, so should only be used when you are building for a single architecture.}
